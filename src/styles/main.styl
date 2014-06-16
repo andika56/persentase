@@ -80,10 +80,23 @@ article
     margin: 0
 
 .bespoke-before
-  transform: translateX(slide_transition_nudge_x * -1) translateX(slide_width / -2) rotateY(slide_transition_rotate_y * -1) translateX(slide_width / -2)
+  -webkit-transform: translateZ(-350px) translateX(-340px) rotateY(45deg);
+  -moz-transform: translateZ(-350px) translateX(-340px) rotateY(45deg);
+  -ms-transform: translateZ(-350px) translateX(-340px) rotateY(45deg);
+  -o-transform: translateZ(-350px) translateX(-340px) rotateY(45deg);
+  transform: translateZ(-350px) translateX(-340px) rotateY(45deg);
+  opacity: 0.1;
+  z-index: 7;
 
 .bespoke-after
-  transform: translateX(slide_transition_nudge_x) translateX(slide_width / 2) rotateY(slide_transition_rotate_y) translateX(slide_width / 2)
+  -webkit-transform: translateZ(-350px) translateX(340px) rotateY(-45deg);
+  -moz-transform: translateZ(-350px) translateX(340px) rotateY(-45deg);
+  -ms-transform: translateZ(-350px) translateX(340px) rotateY(-45deg);
+  -o-transform: translateZ(-350px) translateX(340px) rotateY(-45deg);
+  transform: translateZ(-350px) translateX(340px) rotateY(-45deg);
+  opacity: 0.1;
+  z-index: 7;
+  
   @media print
     transform: none
 
